@@ -2,10 +2,42 @@
 <html lang="cs">
 <head>
     <title>MF Menu</title>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="assets/js/standalone/jquery.min.js"></script>
+
+
 </head>
 <body>
 
     <!-- content -->
 
+        <nav>
+
+              <img id="logo" src="assets/image/mf_logo.png">
+              <img id="burger" src="assets/image/burger.png">
+
+          <ul id="side-nav">
+            <li><a href=#>knihy</a></li>
+            <li><a href=#>časopisy</a></li>
+            <li><a href=#>weby</a></li>
+          </ul>
+        </nav>
+
+
+
+  <script>
+    $(document).ready(function() {
+      $("#burger").click(function() {
+        $("#side-nav").fadeToggle(150);
+      });
+    });
+  </script>
+
 </body>
+
 </html>
